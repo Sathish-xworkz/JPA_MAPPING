@@ -1,33 +1,32 @@
-//package com.sathish.JPA_MAPPING.entity;
+//package com.sathish.OneToMany;
+//
+//import java.util.Set;
 //
 //import javax.persistence.Entity;
 //import javax.persistence.Id;
 //import javax.persistence.JoinColumn;
-//import javax.persistence.OneToOne;
+//import javax.persistence.OneToMany;
+//import javax.persistence.Table;
+//
 //
 //@Entity
+//@Table(name = "student_info")
 //public class Student {
-//	
 //	@Id
 //	private int sid;
 //	private String s_name;
 //	private String std;
 //	
-//	@OneToOne
-//	@JoinColumn(name = "Book_id")
-//	private Book book;
+//	@OneToMany
+//	@JoinColumn(name = "sidFK")
+//	private Set<Book> books;
 //
-//	
-//	public Student() {
-//		// TODO Auto-generated constructor stub
-//	}
-//
-//	public Student(int sid, String s_name, String std, Book book) {
+//	public Student(int sid, String s_name, String std, Set<Book> books) {
 //		super();
 //		this.sid = sid;
 //		this.s_name = s_name;
 //		this.std = std;
-//		this.book = book;
+//		this.books = books;
 //	}
 //
 //	public int getSid() {
@@ -54,17 +53,18 @@
 //		this.std = std;
 //	}
 //
-//	public Book getBook() {
-//		return book;
+//	public Set<Book> getBooks() {
+//		return books;
 //	}
 //
-//	public void setBook(Book book) {
-//		this.book = book;
+//	public void setBooks(Set<Book> books) {
+//		this.books = books;
 //	}
 //
 //	@Override
 //	public String toString() {
-//		return "Student [sid=" + sid + ", s_name=" + s_name + ", std=" + std + ", book=" + book + "]";
+//		return "Student [sid=" + sid + ", s_name=" + s_name + ", std=" + std + ", books=" + books + "]";
 //	}
+//
 //	
 //}

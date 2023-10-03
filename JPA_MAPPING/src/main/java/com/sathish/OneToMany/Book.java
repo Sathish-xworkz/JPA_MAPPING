@@ -1,9 +1,11 @@
-//package com.sathish.JPA_MAPPING.entity;
+//package com.sathish.OneToMany;
 //
 //import javax.persistence.Entity;
 //import javax.persistence.Id;
+//import javax.persistence.Table;
 //
 //@Entity
+//@Table(name = "book_info")
 //public class Book {
 //
 //	@Id
